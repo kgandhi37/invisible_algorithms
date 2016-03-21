@@ -25,6 +25,12 @@ function addBigNumbers(a, b) {
 	var i = 0;
 	var max_float = 0;
 
+	// checking if valid number
+
+	if (isNaN(a) == true || isNaN(b) == true){
+		return "Please make sure input is a number number";
+	}
+
 	// period checks!
 	if (a.indexOf('.') !== -1 || b.indexOf('.') !== -1){
 
